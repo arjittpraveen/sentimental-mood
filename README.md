@@ -2,6 +2,8 @@
 
 A web application that analyzes user input text for sentiment and provides appropriate responses based on the emotional content.
 
+> Demo @ [https://arjittpraveen.github.io/sentimental-mood/](https://arjittpraveen.github.io/sentimental-mood/)
+
 ## Technical Overview
 
 This project consists of a Flask backend server and a simple HTML/CSS/JavaScript frontend that work together to provide real-time sentiment analysis of user input.
