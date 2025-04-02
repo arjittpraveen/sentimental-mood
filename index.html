@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Health Checker</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="outer-container">
+        <h1>Mental Mate</h1>
+        <div id="container">
+            <div class="header">
+                <h2>How are you feeling today?</h2>
+                <button id="theme-toggle" class="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+            
+            <div class="mood-selector">
+                <div class="mood-option" data-mood="happy">
+                    <i class="fas fa-smile"></i>
+                    <span>Happy</span>
+                </div>
+                <div class="mood-option" data-mood="neutral">
+                    <i class="fas fa-meh"></i>
+                    <span>Neutral</span>
+                </div>
+                <div class="mood-option" data-mood="sad">
+                    <i class="fas fa-sad-tear"></i>
+                    <span>Sad</span>
+                </div>
+            </div>
+
+            <div class="input-section">
+                <input type="text" id="userInput" placeholder="Tell me more about how you're feeling...">
+                <button id="check-btn" onclick="checkMood()">Analyze Mood</button>
+            </div>
+
+            <div id="result" class="result-section"></div>
+
+            <div class="mood-history">
+                <div class="mood-history-header">
+                    <h3>Your Mood History</h3>
+                    <button id="reset-btn" class="reset-button">
+                        <i class="fas fa-trash"></i> Reset History
+                    </button>
+                </div>
+                <canvas id="moodChart"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
